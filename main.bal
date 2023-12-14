@@ -8,7 +8,6 @@ configurable string hookSecret = ?;
 // Annotation-based configurations specifying the subscription parameters.
 @websub:SubscriberServiceConfig {
     target: [
-        "https://api.github.com/hub",
         "https://github.com/KasunAbeyweera/webhook-test/events/push.json"
     ],
     secret: hookSecret,
